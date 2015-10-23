@@ -12,6 +12,11 @@ class UrlMappings {
         "/toDoLists/$action?/$id?" {
             controller = 'toDoList'
         }
+        
+        "/usuarios"(resources:"usuario")
+        "/usuarios/$action?/$id?" {
+            controller = 'usuario'
+        }
 
         "/"(view:"/index")
         "500"(view:'/error')

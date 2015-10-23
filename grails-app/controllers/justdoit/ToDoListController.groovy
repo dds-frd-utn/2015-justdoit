@@ -12,10 +12,10 @@ class ToDoListController extends RestfulController {
     }
 
     def compartir() {
-        def usuario = request.JSON?.usuario
-        def toDoList = request.JSON?.toDoList
+        def usuario = Usuario.get(request.JSON?.usuario.id)
+        def toDoList = ToDoList.get(request.JSON?.toDoList.id)
 
-        if ((usuario == null) || (toDoList == null)){
+        if ((usuario == null) || (toDoList == null)) {
             render(status: BAD_REQUEST)
             return
         }

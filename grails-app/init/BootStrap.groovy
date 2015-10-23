@@ -19,8 +19,29 @@ class BootStrap {
             apellido: 'LaBeouf'
         ).save(failOnError: true)
 
-        new ToDoList(usuario: user, mensaje: 'Primera lista').addToTareas(new Tarea(contenido: "Primera tarea")).save(failOnError: true)
-        new ToDoList(usuario: user2, mensaje: 'Segunda lista').addToTareas(new Tarea(contenido: "Segunda tarea")).save(failOnError: true)
+        new ToDoList(usuario: user, mensaje: 'Lista 1').addToTareas(
+            new Tarea(contenido: "Tarea 1.1",)
+        ).addToTareas(
+            new Tarea(contenido: "Tarea 1.2")
+        ).addToTareas(
+            new Tarea(contenido: "Tarea 1.3")
+        ).save(failOnError: true)
+
+        new ToDoList(usuario: user, mensaje: 'Lista 2').addToTareas(
+            new Tarea(contenido: "Tarea 2.1")
+        ).addToTareas(
+            new Tarea(contenido: "Tarea 2.2")
+        ).addToTareas(
+            new Tarea(contenido: "Tarea 2.3")
+        ).save(failOnError: true)
+
+        new ToDoList(usuario: user, mensaje: 'Lista 3').addToTareas(
+            new Tarea(contenido: "Tarea 3.1")
+        ).addToTareas(
+            new Tarea(contenido: "Tarea 3.2")
+        ).addToTareas(
+            new Tarea(contenido: "Tarea 3.3")
+        ).save(failOnError: true)
         */
     }
 

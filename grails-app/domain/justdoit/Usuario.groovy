@@ -1,8 +1,5 @@
 package justdoit
 
-import grails.rest.*
-
-@Resource(uri='/usuarios', formats=['json', 'xml'])
 class Usuario {
     String username
     String email
@@ -11,6 +8,8 @@ class Usuario {
     String apellido
     List toDoLists
     List shrToDoLists
+    Date dateCreated
+    Date lastUpdated
 
     static hasMany = [
         toDoLists:ToDoList,

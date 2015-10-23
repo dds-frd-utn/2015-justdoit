@@ -6,6 +6,8 @@ import grails.rest.*
 class ShrToDoList {
     List comentarios
     List shrTareas
+    Date dateCreated
+    Date lastUpdated
 
     static hasMany = [
         comentarios:Comentario,
