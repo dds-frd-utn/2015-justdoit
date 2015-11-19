@@ -1,0 +1,37 @@
+@media (min-width: 1200px) {
+    .form-signin {
+         margin-left: 0px;
+    }
+}
+@media (min-width: 992px) {
+    .form-signin {
+        margin-left: 0px;
+    }
+}
+@media (min-width: 768px) {
+    .form-signin {
+        margin-left: 0px;
+    }
+}
+.form-signin {
+    width: 330px;
+}
+#container {
+    background-image: url('../../images/justdoit.png');
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+    background-attachment: fixed;
+    background-size: auto 100%;
+}
+
+#container.no-img {
+    background-image :none;
+}
+
+.quote blockquote {
+    margin-top: 50px;
+}
+
+.form-signin .text-right {
+    padding-bottom: 10px;
+}

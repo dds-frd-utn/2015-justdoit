@@ -1,0 +1,16 @@
+{
+  "name": "just-do-it",
+  "version": "0.0.1",
+  "description": "Shareable motivational to-do list (FrontEnd)",
+  "main": "app.js",
+  "repository": "",
+  "author": "Neri Guidi <neri.guidi@gmail.com>",
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "can": "^2.3.0-pre.10",
+    "font-awesome": "^4.4.0",
+    "jquery": "^2.1.4",
+    "nedb": "^1.4.0",
+    "steal": "^0.11.0-pre.8"
+  }
+}

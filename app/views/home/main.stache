@@ -1,0 +1,37 @@
+<div id="sidebar" class="nav-collapse " tabindex="5000" style="overflow: hidden; outline: none;">
+	<!-- sidebar menu start-->
+	<ul class="sidebar-menu" id="nav-accordion">
+		<li>
+			<a href="#home">
+				<span>Inicio</span>
+				<i class="fa fa-chevron-right pull-right"></i>
+			</a>
+		</li>
+		<li>
+			<a href="#personal">
+				<span>To-Do's Personales</span>
+				<i class="fa fa-chevron-right pull-right"></i>
+			</a>
+		</li>
+		<li>
+			<a href="#shared">
+				<span>To-Do's Compartidos</span>
+				<i class="fa fa-chevron-right pull-right"></i>
+			</a>
+		</li>
+		<li>
+			<a href="#completed">
+				<span>To-Do's Completados</span>
+				<i class="fa fa-chevron-right pull-right"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+<section id="main-content">
+	<section class="wrapper">
+		<div class="alert alert-info fade in">
+		<button  data-toggle="modal" href="#proposeModal" class="btn btn-primary btn-sm pull-right propose-todo">Proponer!</button>
+			<strong>Just Do It!</strong> Propone un nuevo To-Do y compartelo con tus amigos!.
+		</div>
+	</section>
+</section>

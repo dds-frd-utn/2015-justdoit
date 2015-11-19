@@ -1,0 +1,12 @@
+.top-nav img {
+	width: 2em;
+	margin-right: 5px;
+}
+
+button.propose-todo {
+	margin-top: -0.6em;
+}
+
+button.more-todos {
+	margin-bottom: 40px;
+}

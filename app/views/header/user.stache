@@ -1,0 +1,18 @@
+<ul class="nav pull-right top-menu">
+	<!-- user login dropdown start-->
+	<li class="dropdown">
+		<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+			<img alt="" src="{{avatar}}">
+			<span class="username">{{name}} {{lastName}}</span>
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu extended logout">
+			<li>
+				<a data-toggle="modal" href="#logoutModal">
+					<i class="fa fa-key"></i> Salir
+				</a>
+			</li>
+		</ul>
+	</li>
+	<!-- user login dropdown end -->
+</ul>
