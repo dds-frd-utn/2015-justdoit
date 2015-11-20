@@ -18,6 +18,7 @@ class UrlMappings {
             controller = 'usuario'
         }
 
+        "/login"(controller: 'usuario', action:'login')
         "/"(view:"/index")
         "500"(view:'/error')
         "404"(view:'/notFound')

@@ -4,12 +4,13 @@ Grupo 4: Galeano, Guidi y Mangiantini
 
 Home
 ```
-GET     localhost:8080     ->  Sitio Principal
+GET     localhost:8080           ->  Sitio Principal
+POST    localhost:8080/login     ->  Autentificación
 ```
 
 Comentarios
 ```
-GET     localhost:8080/comentarios/        ->  Obtener todos los comentario
+GET     localhost:8080/comentarios         ->  Obtener todos los comentario
 GET     localhost:8080/comentarios/:id     ->  Obtener el comentario con dicho id
 POST    localhost:8080/comentarios         ->  Crear un comentario
 PUT     localhost:8080/comentarios/:id     ->  Actualizar un comentario
@@ -60,5 +61,8 @@ GET     localhost:8080/usuarios/:id                 ->  Obtener el usuario con d
 POST    localhost:8080/usuarios                     ->  Crear un usuario
 PUT     localhost:8080/usuarios/:id                 ->  Actualizar un usuario
 DELETE  localhost:8080/usuarios/:id                 ->  Borrar un usuario
-GET     localhost:8080/usuarios/completadas/:id     ->  Obtener todas las to-do lists completadas por el usuario con dicho id
+GET     localhost:8080/usuarios/recientes/:id       ->  Obtener las to-do lists recientes del usuario con dicho id
+GET     localhost:8080/usuarios/personales/:id      ->  Obtener las to-do lists personales del usuario con dicho id
+GET     localhost:8080/usuarios/compartidas/:id     ->  Obtener las to-do lists compartidas con el usuario con dicho id
+GET     localhost:8080/usuarios/completadas/:id     ->  Obtener las to-do lists completadas por el usuario con dicho id
 ```
