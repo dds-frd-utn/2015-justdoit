@@ -1,0 +1,49 @@
+<div class="wrapper">
+	<div class="col-md-6 col-md-offset-6">
+		<form class="form-signin login" onsubmit="return false;">
+			<h2 class="form-signin-heading">
+				Ingresa ahora!
+			</h2>
+			<div class="login-wrap">
+				<input type="text" name="username" class="form-control" placeholder="Usuario" autofocus="">
+				<input type="password" name="password" class="form-control" placeholder="Contraseña">
+				<div class="text-right">
+					<a data-toggle="modal" href="#forogottenModal">
+							¿Olvidó su contraseña?
+					</a>
+				</div>
+				<button class="btn btn-lg btn-login btn-block	login">
+					Ingresar
+				</button>
+			</div>
+		</form> 
+		<!-- Modal -->
+		<div id="forogottenModal" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h4 class="modal-title">¿Olvidó su contraseña?</h4>
+						</div>
+						<div class="modal-body">
+							<form>
+								<p>Ingresa el email con el que te registraste.</p>
+								<input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button data-dismiss="modal" class="btn btn-default" type="button">Cancelar</button>
+							<button class="btn btn-success" type="button">Enviar</button>
+						</div>
+					</div>
+				</div>
+		</div>
+		<!-- modal -->
+	</div>
+	<div class="col-md-4 col-md-offset-7 quote">
+		<blockquote>
+			<p>Don't let your dreams be dreams, yesterday you said tomorrow, so just do it, make your dreams come true, Just do it!</p>
+			<small>Shia LeBeouf</small>
+		</blockquote>
+	</div>
+</div>

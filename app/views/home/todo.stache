@@ -1,0 +1,77 @@
+{{#each .}}
+<div class="row">
+	<div class="col-md-12">
+		<section class="panel tasks-widget todo" {{data 'todo'}}>
+			<header class="panel-heading">
+				{{getToDoTitle}}
+				<div class="profile-activity pull-right">
+					<h5 class="text-right">
+						12 August 2013
+						<i class=" fa fa-clock-o"></i>
+						<small class="text-primary">10:45 AM</small>
+					</h5>
+				</div>
+			</header>
+			<div class="panel-body">
+				<div class="task-content">
+					<ul id="sortable" class="task-list ui-sortable">
+						{{#getToDoTasks}}
+						<li class="list-primary task" {{data 'task'}}>
+							<div class="task-title">
+								<span class="task-title-sp">{{getTaskContent}}</span>
+								<div class="pull-right task-check">
+									{{#isChecked}}
+										<button class="btn btn-success btn-xs fa fa-check"></button>
+									{{/isChecked}}
+									{{^isChecked}}
+										<button class="btn btn-warning btn-xs fa fa-times"></button>
+									{{/isChecked}} 
+								</div>
+							</div>
+						</li>
+						{{/getToDoTasks}}
+					</ul>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<section class="panel todo-comments">
+					<div class="panel-body">
+						{{#if getComments}}
+						<div class="col-md-12">
+							<div class="timeline-messages">
+								{{#getComments}}
+								<div class="msg-time-chat">
+									<a href="#" class="message-img">
+										<img class="avatar" src="{{getAvatar}}"></a>
+									<div class="message-body">
+										<span class="arrow"></span>
+										<div class="text">
+											<p class="attribution"><span>{{getUserFullName}}</span></a> {{getDate}}</p>
+											<p>{{getContent}}</p>
+										</div>
+									</div>
+								</div>
+								{{/getComments}}
+							</div>
+						</div>
+						{{else}}
+						<div class="alert alert-warning fade in">
+							Aún nadie dejó un comentario. Se el primero en hacerlo!
+						</div>
+						{{/if}}
+						<div class="chat-form">
+							<form class="form-inline">
+								<div class="form-group col-md-10">
+									<input type="text" class="form-control comment-todo" placeholder="Escribe un comentario...">
+								</div>
+								<button class="btn btn-primary col-md-2 leave-comment">Comentar</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+	</div>
+</div>
+{{/each}}
+<button type="button" class="btn btn-shadow btn-block btn-info more-todos">Mas!</button>
